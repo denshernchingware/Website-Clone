@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Application</title>
+  <link rel="stylesheet" href="app.css">
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="spinner-container" id="loader">
+  <div class="double-arc-spinner"></div>
+</div>
+
+
+
+  <section class="main-section">
+    <aside>
+      <div class="aside-container">
+        <div class="asd"><i class="bi bi-grid-fill"></i> Dashboard</div>
+        <div class="asd"><i class="bi bi-person-check"></i> Attendance</div>
+        <div class="asd"><i class="bi bi-mortarboard"></i> Academics</div>
+        <div class="asd"><i class="bi bi-trophy"></i> Competitive</div>
+        <div class="asd"><i class="bi bi-credit-card"></i> Fees Details</div>
+        <div class="asd"><i class="bi bi-person-circle"></i> Profile</div>
+      </div>
+    </aside>
+
+    <header>
+      <div class="header-main-container">
+        <div class="logo-container">
+          <img src="https://analysis.aditya.ac.in/v23/student/assets/img/adityalogo.svg" alt="aditya-logo">
+          <div class="toogle">
+            <i class="bi bi-list toggle-sidebar-btn d-block logo-mobile-new d-block d-xl-block d-none"></i>
+          </div>
+        </div>
+        <div class="header-image">
+          <img src="https://analysis.aditya.ac.in/uploads/student_photos/242718.jpg" alt="profile-image">
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="attendance design">
+        <h2>Attendance</h2>
+        <div class="att-icon-txt-container">
+          <div class="att-icon">
+            <div class="att-icon-img">
+              <i class="bi bi-person-check"></i>
+            </div>
+          </div>
+          <div class="att-txt">
+            <h6>76.58 %</h6>
+            <span>31/40</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="academics design">
+        <h2>Academics</h2>
+        <div class="att-icon-txt-container">
+          <div class="academics-icon">
+            <div class="att-icon-img">
+              <i class="bi bi-mortarboard"></i>
+            </div>
+          </div>
+          <div class="att-txt">
+            <h6>83.50 %</h6>
+            <span>2 Exams</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="fee-due design">
+        <h2>Fee Due</h2>
+        <div class="att-icon-txt-container">
+          <div class="fee-icon">
+            <div class="att-icon-img">
+              <img src="/Screenshot 2025-07-29 212400.png" alt="fee-icon">
+            </div>
+          </div>
+          <div class="att-txt">
+            <h6>&#8377; 62,000</h6>
+            <!-- <span><span class="txt-clr">Fee:</span>&#8377; 62,000</span>
+            <span><span class="txt-clr">paid:</span> &#8377; 62,000</span> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="quik-links design">
+        <div class="quik-links-container">
+          <div class="quik-links-hd">
+            <h2>Quik Links</h2>
+          </div>
+
+          <div class="self-dec">
+            <div class="self-dec-icon">
+              <i class="bi bi-file-earmark-text" style="color: #FF771D; font-size: 2rem;"></i>
+            </div>
+            <div class="self-dec-txt-cont">
+              <div class="self-dec-hd">
+                <h5>Self Declaration Form</h5>
+              </div>
+              <div class="self-dec-txt">
+                <p>Last Updated : 12/06/2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback">
+            <div class="feedback-img">
+              <img src="https://analysis.aditya.ac.in/v23/student/assets/img/p5.jpg" alt="feedback-image">
+            </div>
+            <div class="feedback-txt">
+              <h5>Feedback</h5>
+              <p>Odd Semester Feedback Phase 1 (Asms kkd)</p>
+              <span><i class="bi bi-calendar d-inline-block me-1 fotm-date"></i> 2025-08-01</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="campus-connect design">
+        <div class="campus-connect-container">
+            <div class="campus-connect-header">
+                <h5>Campus Connect</h5>
+                <select>
+                    <option value="all">All</option>
+                </select>
+            </div>
+            <p class="no-data">No Data Found</p>
+        </div>
+
+    </div>
+
+      <div class="suggestions design">
+        <div class="form-container">
+          <h5>Suggestions & Complaints</h5>
+
+          <label for="sendTo">Send To</label>
+          <select id="sendTo" name="sendTo">
+            <option value="">Select</option>
+            <option value="admin">Management</option>
+            <option value="support">Principal</option>
+          </select>
+
+          <label for="department">Select Department</label>
+          <select id="department" name="department" required>
+            <option value="">Select</option>
+            <option value="academics">Academics & Curriculum</option>
+            <option value="campus">Campus Environment & Facilities</option>
+            <option value="faculty">Faculty & Staff Conduct</option>
+            <option value="exams">Examinations & Evaluations</option>
+            <option value="library">Library & Learning Resources</option>
+            <option value="hostel">Hostel & Accommodation</option>
+            <option value="sports">Sports & Extracurricular Activities</option>
+            <option value="transport">Transportation</option>
+            <option value="placements">Placements & Career Services</option>
+            <option value="it">IT & Digital Services (Desktops, Wi-Fi, LMS)</option>
+            <option value="discipline">Discipline & Campus Security</option>
+            <option value="women">Women Grievance</option>
+          </select>
+
+          <label for="remarks">Remarks</label>
+          <textarea id="remarks" name="remarks" placeholder="Enter your remarks here..."></textarea>
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="acknowledge">
+            <label for="acknowledge">
+              <p>
+                I acknowledge that my submission is constructive, free from offensive content, and complies with institute
+                <a href="#">guidelines</a>.
+              </p>
+            </label>
+          </div>
+
+          <div class="btn">
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+          <div class="notification-image">
+        <img src="	https://analysis.aditya.ac.in/v23/student/assets/img/Student-SMS-Hub.jpg" alt="notification-image">
+      </div>
+    </main>
+      
+      
+  </section>
+  <div class="bottom-nav">
+  <a href="#"><i class="bi bi-grid-fill"></i></a>
+  <a href="#"><i class="bi bi-person"></i></a>
+  <a href="#"><i class="bi bi-mortarboard-fill"></i></a>
+  <a href="#"><i class="bi bi-trophy"></i></a>
+  <a href="#"><i class="bi bi-credit-card"></i></a>
+  <a href="#"><i class="bi bi-person-circle"></i></a>
+</div>
+<script>
+  window.addEventListener("load", function () {
+    document.getElementById("loader").style.display = "none";
+  });
+</script>
+
+
+</body>
+</html>

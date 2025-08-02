@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Application</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* body {
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      width: 75%;
+      height:95vh;
+      display: flex;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    } */
+    body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  width: 75%;
+  display: flex;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+   
+
+    .header-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+
+ 
+    
+
+    .student-card {
+      width: 70%;
+      height:auto;
+  
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .student-card img {
+      width: 100%;
+      height:100%;
+      
+      
+    }
+
+    .student-card .rank {
+      color: orangered;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .right {
+      padding-left: 30px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      width:50%;
+    }
+    .right img{
+      width:200px;
+      height:55px;
+    }
+    .img-cont{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+  
+   .login-box button a{
+      text-decoration:none;
+       color:white;
+    }
+    .login-box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .login-box input {
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width:100%;
+     
+    }
+
+    .login-box button {
+      background-color: #4285f4;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .login-box button:hover {
+      background-color: #357ae8;
+    }
+
+    .login-box a {
+      text-decoration: none;
+      color: #4285f4;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+@media (max-width: 768px) {
+  .container {
+  background: white;
+  width: 100vw;
+  display: flex;
+  flex-direction:column;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  gap: 20px;
+  flex-wrap: nowrap;
+  }
+
+  .student-card {
+    order: 2; /* ⬇ Push image to bottom */
+    width: 100%;
+  }
+
+  .right {
+    order: 1; /* ⬆ Bring login form to top */
+    width: 100%;
+    padding: 0;
+  }
+
+  .right img {
+    width: 150px;
+    height: auto;
+  }
+
+  .img-cont {
+    justify-content: center;
+  }
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+      
+        <!-- Example Student Card -->
+        <div class="student-card">
+          <img src="https://i.postimg.cc/cJH1qJwR/Whats-App-Image-2025-08-02-at-00-54-43-fcb7ca12.jpg" alt="CH. Syam Sai Raj">     
+        </div>
+
+  
+  
+
+    <div class="right">
+      <div class="img-cont">
+          <img src="https://analysis.aditya.ac.in/v23/student/assets/img/adityalogo.svg" alt="aditya-logo">
+      </div>
+    
+      <h3>Login</h3>
+      <div class="login-box">
+        <input type="text" placeholder="Enter SUC">
+        <a href="#">Where to find SUC?</a>
+        <input type="password" placeholder="Enter Password">
+        <a href="#">Forgot Password?</a>
+        <button><a href="dashboard.html">Login</a></button>
+        <p><a href="#">I don't have an account?</a></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
